@@ -13,6 +13,7 @@
         <th>Doctor</th>
         <th>Department</th>
         <th>Message</th>
+        <th>Actions</th>
 
     </tr>
 
@@ -25,6 +26,12 @@
             <td>{{ appointment.doctor }}</td>
             <td>{{ appointment.department }}</td>
             <td>{{ appointment.message}}</td>
+            <td>
+
+                <a href="/delete/{{ appointment.id }}" class="btn btn-danger">Delete</a>
+                <a href="/edit/{{ appointment.id }}" class="btn btn-danger">Edit</a>
+
+            </td>
         
         </tr>
 
